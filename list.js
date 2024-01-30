@@ -1,5 +1,5 @@
 function arrayToList(arr) {
-  // Add code.
+  return
 }
 
 function listToArray(list, arr) {

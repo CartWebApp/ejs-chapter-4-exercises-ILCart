@@ -1,9 +1,15 @@
 function reverseArray(arr) {
-  // Add code.
+  let reversed = [];
+  for (const num of arr) {
+    reversed.unshift(num);
+  }
+  return reversed
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+  for (let i = 0; i < arr.length; i++) {
+    arr.unshift(...arr.splice(i,1));
+  }
 }
 
 
