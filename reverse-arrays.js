@@ -12,10 +12,18 @@ function reverseArrayInPlace(arr) {
   }
 }
 
+function reverseArrayInPlaceLoop(arr) {
+  for (let i = 0; i > arr.length; i--) {
+    arr.unshift();
+  }
+}
+
+
 // tests 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
-let arrayValue = [1, 2, 3, 4, 5];
-reverseArrayInPlace(arrayValue);
+let arrayValue = [1,2,3,4,5];
+reverseArrayInPlaceLoop(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
+

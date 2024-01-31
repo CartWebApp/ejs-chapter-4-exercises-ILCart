@@ -1,10 +1,9 @@
 function arrayToList(arr) {
   if (arr.length <= 0) return null;
-  let obj = {
+  return {
     "value": arr.shift(),
     "rest": arrayToList(arr)
-  }
-  return obj;
+  };
 }
 
 function listToArray(list, arr=[]) {
