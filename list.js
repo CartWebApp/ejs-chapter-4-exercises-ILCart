@@ -1,11 +1,29 @@
 function arrayToList(arr) {
-  return
+  if (arr.length <= 0) return null;
+  let obj = {
+    "value": arr.shift(),
+    "rest": arrayToList(arr)
+  }
+  return obj;
 }
 
-function listToArray(list, arr) {
-  // Add code.
-}
+function listToArray(list, arr=[]) {
+  if(list == null){
+    return arr;
+  }
+  arr.push(list.value);
+  return listToArray(list.rest,arr);
 
+}
+function prepend(val, rest=null) {
+  return { "value": val, "rest": rest }
+}
+function nth(list, index) {
+  if(index == 0){
+    return list.value;
+  }
+  return nth(list.rest,index-1)
+}
 // tests
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}

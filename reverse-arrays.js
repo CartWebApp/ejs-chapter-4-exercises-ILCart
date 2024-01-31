@@ -12,11 +12,6 @@ function reverseArrayInPlace(arr) {
   }
 }
 
-
-
-
-
-
 // tests 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
