@@ -15,7 +15,7 @@ function listToArray(list, arr=[]) {
 
 }
 function prepend(val, rest=null) {
-  return { "value": val, "rest": rest }
+  return { "value": val, "rest": rest };
 }
 function nth(list, index) {
   if(index == 0){
