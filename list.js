@@ -29,7 +29,7 @@ function nth(list, index) {
   if (index == 0) {
     return list.value;
   }
-  return nth(list.rest, index - 1)
+  return nth(list.rest, index - 1);
 }
 // tests
 console.log(arrayToList([10, 20]));
